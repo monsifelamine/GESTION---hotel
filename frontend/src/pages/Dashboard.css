@@ -1,0 +1,160 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.page-header h1 {
+    font-size: 1.875rem;
+    margin-bottom: 4px;
+}
+
+.page-header p {
+    color: var(--text-muted);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container.blue { background: #eff6ff; color: #3b82f6; }
+.icon-container.green { background: #f0fdf4; color: #22c55e; }
+.icon-container.orange { background: #fff7ed; color: #f97316; }
+.icon-container.purple { background: #faf5ff; color: #a855f7; }
+
+.card-body h3 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+.card-body p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.trend-pos {
+    color: var(--success);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.dashboard-sections {
+    display: flex;
+    gap: 24px;
+}
+
+.recent-activity {
+    flex: 2;
+    min-width: 600px;
+}
+
+.revenue-chart {
+    flex: 1;
+    min-width: 300px;
+}
+
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 200px;
+    padding: 20px 0;
+}
+
+.chart-bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 40px;
+}
+
+.chart-bar {
+    width: 100%;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--bg-main) 100%);
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.chart-bar:hover {
+    transform: scaleX(1.1);
+}
+
+.chart-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+    .dashboard-sections {
+        flex-direction: column;
+    }
+    
+    .recent-activity, .revenue-chart {
+        min-width: 100%;
+    }
+}
+
+.client-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.avatar-sm {
+    width: 28px;
+    height: 28px;
+    background: #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
