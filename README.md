@@ -1,4 +1,4 @@
-# Application de Gestion de Réservation (Salles / Matériel)
+# Application Web de Gestion Hôtelière et de Réservation
 
 Ce projet est une application web interne permettant de réserver des ressources tout en évitant les conflits d'horaires.
 
