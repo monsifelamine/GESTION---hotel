@@ -1,55 +1,126 @@
-# Application Web de Gestion Hôtelière et de Réservation
+# 🏨 Gestion de Réservation Hôtelière
 
-Ce projet est une application web interne permettant de réserver des ressources tout en évitant les conflits d'horaires.
+Application web **Full Stack** permettant de gérer les réservations hôtelières, les chambres, les clients, les paiements et les factures.
 
-## Technologies
-- **Backend** : Laravel 11.x (API REST) + Sanctum
-- **Frontend** : React JS (Vite) + Axios + Bootstrap 5
-- **Database** : SQLite (par défaut) / MySQL possible.
-- **UI** : Lucide-React / FullCalendar / SweetAlert2
+## 📌 Description
 
-## Installation
+Ce projet est une application de gestion de réservation hôtelière développée avec **Laravel** pour le Back-End et **React.js** pour le Front-End.
 
-### 1. Prérequis
-- PHP 8.2+
-- Composer
-- Node.js & NPM
+L’objectif est de faciliter la gestion des chambres, des clients et des réservations, tout en permettant de suivre les disponibilités et d’éviter les conflits de réservation.
 
-### 2. Configuration du Backend
+## ✨ Fonctionnalités
+
+* 🔐 Authentification des utilisateurs
+* 👤 Gestion des utilisateurs et des rôles
+* 🛏️ Gestion des chambres
+* 🗂️ Gestion des catégories
+* 👥 Gestion des clients
+* 📅 Gestion des réservations
+* ❌ Annulation des réservations
+* 🔎 Recherche et filtrage
+* 💳 Gestion des paiements
+* 🧾 Gestion des factures
+* 📊 Tableau de bord
+
+## 🛠️ Technologies utilisées
+
+### Front-End
+
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+* React Router
+* Axios
+* Redux / Redux Toolkit
+
+### Back-End
+
+* Laravel
+* PHP
+* API REST
+* Laravel Sanctum
+
+### Base de données
+
+* MySQL
+
+## 🏗️ Architecture
+
+```text
+React.js
+   │
+   │ Axios / API REST
+   ▼
+Laravel
+   │
+   ▼
+MySQL
+```
+
+## 📂 Structure du projet
+
+```text
+Gestion-Reservation-Hoteliere/
+│
+├── backend/
+├── frontend/
+└── README.md
+```
+
+## ⚙️ Installation
+
+### Backend
+
 ```bash
 cd backend
-cp .env.example .env
 composer install
+cp .env.example .env
 php artisan key:generate
-# La base de données est déjà configurée en SQLite (database/database.sqlite)
-php artisan migrate:fresh --seed
+php artisan migrate
 php artisan serve
 ```
-**Accès API :** http://localhost:8000
 
-### 3. Configuration du Frontend
+Backend :
+
+```text
+http://127.0.0.1:8000
+```
+
+### Frontend
+
 ```bash
 cd frontend
 npm install
-npm run dev
+npm start
 ```
-**Accès Application :** http://localhost:5173
 
-## Identifiants de test (Seed)
+Frontend :
 
-| Rôle  | Email              | Mot de passe |
-|-------|--------------------|--------------|
-| Admin | admin@example.com  | password     |
-| User  | user@example.com   | password     |
+```text
+http://localhost:3000
+```
 
-## Fonctionnalités
-- Authentification avec Token Sanctum.
-- Gestion des catégories et ressources (Admin).
-- Vue Calendrier dynamique.
-- Réservations avec règle anti-chevauchement.
-- Système de notifications en temps réel (Polling).
-- Annulation par le créateur.
-- Validation des dates et horaires.
+## 🔐 Compte de démonstration
+
+Pour tester l’application :
+
+```text
+Email : admin@example.com
+Mot de passe : password
+Rôle : Administrateur
+```
+
+## 👨‍💻 Auteur
+
+**El Amine Monsif**
+
+Développement Digital – Option Web Full Stack
+
+### Technologies
+
+`Laravel` `React.js` `PHP` `JavaScript` `MySQL` `HTML5` `CSS3` `REST API`
+
 
 ## Auteur
 Antigravity AI (Pair Programming)
