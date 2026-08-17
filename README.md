@@ -122,5 +122,4 @@ Développement Digital – Option Web Full Stack
 `Laravel` `React.js` `PHP` `JavaScript` `MySQL` `HTML5` `CSS3` `REST API`
 
 
-## Auteur
-Antigravity AI (Pair Programming)
+
